@@ -27,11 +27,20 @@ int main() {
     cout << "File written." << endl;
 
     file.close();
+    writeFile.close();
     return 0;
 }
 
 /*
+    Replace the while loop in the main function with this loop to
+    send converted text to the translate.txt file for translation.
 
-    
+    while (!file.eof()) {
+        Word temp;
+        file >> line;
+        lineNum++;
+        line = temp.newWord(line);
+        writeFile << line << "\n";
+    }
 
 */
